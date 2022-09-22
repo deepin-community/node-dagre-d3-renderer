@@ -1,0 +1,39 @@
+Source: node-dagre-d3-renderer
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Section: javascript
+Priority: optional
+Build-Depends: debhelper-compat (= 12),
+               nodejs (>= 6),
+               pkg-js-tools (>= 0.9.26~),
+               node-d3 (>= 5.16.0~),
+               node-dagre-layout (>= 0.8.8+really0.8.5+dfsg~),
+               node-lodash (>= 4.17.5~),
+               rollup,
+               uglifyjs.terser,
+               node-rollup-plugin-node-resolve (>= 11~),
+               node-rollup-plugin-buble,
+               node-rollup-plugin-commonjs (>= 15~)
+Standards-Version: 4.5.1
+Vcs-Browser: https://salsa.debian.org/js-team/node-dagre-d3-renderer
+Vcs-Git: https://salsa.debian.org/js-team/node-dagre-d3-renderer.git
+Homepage: https://github.com/dagrejs/dagre-d3#readme
+Rules-Requires-Root: no
+
+Package: node-dagre-d3-renderer
+Architecture: all
+Depends: ${misc:Depends},
+         nodejs (>= 6),
+         node-d3 (>= 5.16.0~),
+         node-dagre-layout (>= 0.8.8+really0.8.5+dfsg~),
+         node-lodash (>= 4.17.5~)
+Provides: node-dagre-d3
+Description: D3-based renderer for Dagre
+ This library is an out-of-box replacement for dagre-d3 and it is based on the
+ original dagre-d3 project.
+ .
+ Dagre is a JavaScript library that makes it easy to lay out directed graphs on
+ the client-side. The dagre-d3 library acts as a front-end to dagre, providing
+ actual rendering using D3.
+ .
+ Node.js is an event-based server-side JavaScript engine.

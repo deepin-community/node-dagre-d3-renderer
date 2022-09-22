@@ -1,0 +1,1 @@
+echo "Tests are disabled because puppeteer is not packaged"

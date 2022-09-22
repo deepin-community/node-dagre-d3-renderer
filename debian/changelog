@@ -1,0 +1,55 @@
+node-dagre-d3-renderer (0.6.4+dfsg-3) unstable; urgency=medium
+
+  * Update minimum version of node-rollup-plugin-node-resolve to 11
+
+ -- Pirate Praveen <praveen@debian.org>  Sat, 02 Jan 2021 14:43:25 +0530
+
+node-dagre-d3-renderer (0.6.4+dfsg-2) unstable; urgency=medium
+
+  [ Nilesh Patra ]
+  * Enforce version constraints
+
+  [ Pirate Praveen ]
+  * Drop legacy node-resolve and commonjs plugins
+  * Bump Standards-Version to 4.5.1 (no changes needed)
+
+ -- Pirate Praveen <praveen@debian.org>  Tue, 29 Dec 2020 22:36:44 +0530
+
+node-dagre-d3-renderer (0.6.4+dfsg-1) unstable; urgency=medium
+
+  * Team Upload.
+
+  [ Pirate Praveen ]
+  * Set minimum version of webpack to 4
+
+  [ Nilesh Patra ]
+  * Remove generated files
+  * Modify watch to point to new upstream
+  * New upstream version 0.6.4+dfsg
+  * Remove un-needed patches
+  * Switch to rollup, and generate minified files with terser
+  * Drop compat, switch to debhelper-compat
+  * Remove install, pkg-js-tools auto-installs
+  * Fix control with cme
+  * Add "Rules-Requires-Root:no"
+  * Fix copyright
+  * Update homepage, add description about changes in package
+
+  [ Xavier Guimard ]
+  * Update debian/watch to use github tags
+  * Fix autopkgtest (package unusable directly)
+
+ -- Nilesh Patra <npatra974@gmail.com>  Wed, 18 Mar 2020 14:59:30 +0530
+
+node-dagre-d3-renderer (0.5.8+dfsg-2) unstable; urgency=medium
+
+  * Reupload to unstable
+  * Switch to webpack to build
+
+ -- Pirate Praveen <praveen@debian.org>  Mon, 05 Aug 2019 08:34:04 +0000
+
+node-dagre-d3-renderer (0.5.8+dfsg-1) experimental; urgency=low
+
+  * Initial release (Closes: #930223)
+
+ -- Pirate Praveen <praveen@debian.org>  Sat, 08 Jun 2019 21:28:54 +0530

@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Tell nodejs to look for embedded modules
+export NODE_PATH := ${CURDIR}
+
+%:
+	dh $@ --with nodejs
+
+override_dh_auto_build:
+	rollup -c debian/rollup.config.js index.js -n dagreD3 -f umd -o dist/dagre-d3.js
+	rollup -c debian/rollup.config.js index.js -f cjs -o dist/dagre-d3.core.js
+	uglifyjs.terser dist/dagre-d3.js -c -m --source-map -o dist/dagre-d3.min.js
+	uglifyjs.terser dist/dagre-d3.core.js -c -m --source-map -o dist/dagre-d3.core.min.js

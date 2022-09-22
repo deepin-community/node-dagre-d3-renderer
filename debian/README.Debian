@@ -1,0 +1,8 @@
+dagre-d3-renderer for Debian
+----------------------------
+
+The module was initially a package of upstream: dagre-d3-renderer
+dagre-d3-renderer itself is a fork of dagre-d3
+Since for new packages, dagre-d3 is more relevant and updated, the upstream has been changed to dagre-d3 instead.
+
+  -- Nilesh Patra <npatra974@gmail.com>  Wed, 18 Mar 2020 14:58:05 +0530
